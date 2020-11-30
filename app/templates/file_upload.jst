@@ -1,0 +1,33 @@
+<div class="row">
+	<div class="col-md-12">
+		<p>
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseForm" aria-expanded="false" data-placement="top">
+			    Upload CSV
+			</button>
+      <a href="../public/sample_people_data.csv" download="sample_data.csv" class="btn btn-primary">
+        Download Sample CSV
+      </a>
+		</p>
+		<div class="collapse" id="collapseForm">
+      <div class="card card-body">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert"> 
+          <strong>Please use the same Format in Sample CSV!</strong> Download the sample CSV by clicking the Download Sample CSV Button and insert the data. Don't change the headers of the CSV file.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+  			<form>
+  			  <div class="form-group">
+  			    <label>Upload</label>
+  			    <input type="file" class="form-control-file" id="myFile" name="user_data_file">
+  			  </div>
+  			  <button type="submit" class="btn btn-primary">Submit</button>
+  			</form>  
+	  	</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12" id="table_content">
+	</div>
+</div>

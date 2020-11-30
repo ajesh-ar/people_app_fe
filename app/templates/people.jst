@@ -1,0 +1,37 @@
+<td><%- id %></td>
+<td>
+  <% if (save_flag) { %>
+    <input type="text" name="first_name" value="<%- first_name %>" id="f_name">
+  <% } else { %>
+  	<%- first_name %>
+  <% } %>
+</td>
+<td>
+  <% if (save_flag) { %>
+    <input type="text" name="last_name" value="<%- last_name %>" id="l_name">
+  <% } else { %>
+  	<%- last_name %>
+  <% } %>
+</td>
+<td>
+	<% if (save_flag) { %>
+    <input type="text" name="email" value="<%- email %>"  id="email">
+  <% } else { %>
+    <%- email %>
+  <% } %>
+</td>
+<td>
+	<% if (save_flag) { %>
+    <input type="text" name="phone" value="<%- phone %>" id="phone">
+  <% } else { %>
+    <%- phone %>
+  <% } %>
+</td>
+<td>
+  <%- errors %>
+</td>
+<td>
+	<% if (save_flag) { %>
+		<button id='update_user_<%- pending_id %>' class='btn btn-primary update_user_details'> Save </button>
+  <% } %>
+</td>
